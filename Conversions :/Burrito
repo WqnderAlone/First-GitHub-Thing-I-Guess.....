@@ -1,0 +1,16 @@
+typeOfConversion = str(input("What would you like to convert? The choices are: \n1. Weight(w)\n2. Length(l)\n3. Temperature\n"))
+if typeOfConversion == "w" or "weight":
+  how = str(input("Would you like to convert pounds to kilos (lbs -> kilos), or kilos to pounds (kilos -> lbs): \n"))
+  if how == "lbs -> kilos":
+    lbs = float(input("Enter the amount of pounds you wish to convert: "))
+    print(str(lbs) + " lbs = " + str(lbs/2.205) + " kilos.")
+  elif how == "kilos -> lbs":
+    kilos = float(input("Enter the amount of kilos you wish to convert: "))
+    print(str(kilos) + " kilos = " + str(kilos*2.205) + " lbs.")
+  else:
+    print("Oh no! Something went wrong!")
+
+elif typeOfConversion == "l" or "length":
+  how = str(input("Would you like to convert metres to feet (metres -> feet) or feet to metres (feet -> metres): \n"))
+  if how == "metres -> feet":
+    

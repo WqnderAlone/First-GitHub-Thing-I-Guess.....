@@ -1,4 +1,4 @@
-typeOfConversion = str(input("What would you like to convert? The choices are: \n1. Weight(w)\n2. Length(l)\n3. Temperature\n"))
+typeOfConversion = str(input("What would you like to convert? The choices are: \n1. Weight(w)\n2. Length(l)\n3. Temperature(t)\n"))
 if typeOfConversion == "w" or "weight":
   how = str(input("Would you like to convert pounds to kilos (lbs -> kilos), or kilos to pounds (kilos -> lbs): \n"))
   if how == "lbs -> kilos":
@@ -13,4 +13,12 @@ if typeOfConversion == "w" or "weight":
 elif typeOfConversion == "l" or "length":
   how = str(input("Would you like to convert metres to feet (metres -> feet) or feet to metres (feet -> metres): \n"))
   if how == "metres -> feet":
-    
+    metres = str(input("Enter the length in metres that you wish to convert: "))
+    print(str(metres) + " metres = " + str(metres*3.28084) + " feet.")
+  elif how == "feet -> metres":
+    feet = str(input("Enter the length in feet that you wish to conert: "))
+    print(str(feet) + " feet = " + str(feet/3.28084) + " metres.")
+  else:
+    print("Oh no! Something went wrong!")
+
+elif typeOfConversion == "

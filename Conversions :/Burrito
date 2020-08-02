@@ -13,12 +13,19 @@ if typeOfConversion == "w" or "weight":
 elif typeOfConversion == "l" or "length":
   how = str(input("Would you like to convert metres to feet (metres -> feet) or feet to metres (feet -> metres): \n"))
   if how == "metres -> feet":
-    metres = str(input("Enter the length in metres that you wish to convert: "))
+    metres = float(input("Enter the length in metres that you wish to convert: "))
     print(str(metres) + " metres = " + str(metres*3.28084) + " feet.")
   elif how == "feet -> metres":
-    feet = str(input("Enter the length in feet that you wish to conert: "))
+    feet = float(input("Enter the length in feet that you wish to conert: "))
     print(str(feet) + " feet = " + str(feet/3.28084) + " metres.")
   else:
     print("Oh no! Something went wrong!")
 
-elif typeOfConversion == "
+elif typeOfConversion == "t" or "temperature":
+  how = str(input("Would you like to convert Celsius to Fahrenheit (c -> f) or Fahrenheit to Celsius (f -> c): \n"))
+  if how == "c -> f":
+    Celsius = float(input("Enter the temperature in Celsius that you wish to convert: "))
+    print(str(Celsius) + " Celsius = " + str((Celsius*(9/5)) + 32) " Fahrenheit")
+  if how == "f -> c":
+    Fahrenheit = float(input("Enter the temperature in Fahrenheit that you wish to convert: ))
+    print(str(Fahrenheit) + " Fahrenheit = " + str()

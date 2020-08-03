@@ -26,6 +26,10 @@ elif typeOfConversion == "t" or "temperature":
   if how == "c -> f":
     Celsius = float(input("Enter the temperature in Celsius that you wish to convert: "))
     print(str(Celsius) + " Celsius = " + str((Celsius*(9/5)) + 32) " Fahrenheit")
-  if how == "f -> c":
+  elif how == "f -> c":
     Fahrenheit = float(input("Enter the temperature in Fahrenheit that you wish to convert: ))
     print(str(Fahrenheit) + " Fahrenheit = " + str()
+  else:
+    print("Oh no! Something went wrong!")
+else:
+  print("Oh no! Something went wrong!")
